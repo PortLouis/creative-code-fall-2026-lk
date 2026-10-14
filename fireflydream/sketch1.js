@@ -47,7 +47,7 @@ class Particle {
    this.acc = p5.Vector.random2D()
     this.acc.mult(0.12)
     this.vel.add(this.acc)
-    this.vel.limit(0.7)
+    this.vel.limit(0.8)
     this.pos.add(this.vel)
 
     //right

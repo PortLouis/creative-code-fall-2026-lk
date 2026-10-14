@@ -1,12 +1,16 @@
 body{
-    margin: 0; 
+    margin: 0;
+    background-color: black;
 }
 
 canvas {
     position: fixed;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
     display: block;
 }
 

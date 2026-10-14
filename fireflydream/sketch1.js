@@ -22,15 +22,14 @@ function draw() {
   background(20);
 
   let ac = grass.width/grass.height
-  let ec = runners.width/runners.height
   image(img, 0, 0, width, height)
   
   for (let i = 0; i < particles.length; i++) {
     particles[i].update();
     particles[i].show();
   }
-  image(runners, 0, 0, width, runners.height/ac)
-  image(grass, 0, 220, width, grass.height/ac )
+  image(runners, -1, 0, width, runners.height/ac)
+  image(grass, 0, 250, width, grass.height/ac )
 }
 
 class Particle {

@@ -10,7 +10,7 @@ async function setup() {
   grass = await loadImage("grass.png")
   runners = await loadImage("runners.png")
 
-  let numParticles = 50;
+  let numParticles = 45;
 
   for (let i = 0; i < numParticles; i++) {
     let particle = new Particle();
@@ -39,7 +39,7 @@ class Particle {
     this.acc = createVector(0, 0);
 
     this.color = color(255, 210, 0);
-    this.size = random(1, 6);
+    this.size = random(-1, 6);
   }
 
   update() {
